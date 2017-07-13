@@ -1,0 +1,3 @@
+FontAwesome-webfont
+OpenSans-Bold
+OpenSans-Regular
