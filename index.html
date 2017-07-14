@@ -38,7 +38,7 @@
           Разработка сайтов под ключ</p>
       </div>
     </div>
-    <a href="#portfolio" class="main-down">
+    <a href="#portfolio" class="main-down slowly">
     <i class="icon-down"></i></a>
   </div>  
   
@@ -162,6 +162,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
+    $(document).ready(function(){
+      //навигация - плавный скроллинг к якорю
       $(".slowly").on("click", function (event) {
         // отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
@@ -170,7 +172,7 @@
         //узнаем высоту от начала страницы до блока на который ссылается якорь
         top = $(id).offset().top;
         //анимируем переход на расстояние - top за 700 мс
-        $('body,html').animate({scrollTop: top}, 700);
+        $('body,html').animate({scrollTop: top}, 800);
       });
     });
     </script>
